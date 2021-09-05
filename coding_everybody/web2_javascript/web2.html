@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "web2.js"></script>
+
+</head>
+<body> 
+    <h1><a href = "index.html">WEB</a></h1>
+    <h4><a href = "index.html">javascript</a></h4>
+    <input type = "button" value = "night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+     ">
+    <input type = "button" value = "day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        ">
+    
+    <!-- 어차피 EVENT가 일어나는 대상에서 이루어지니까 ID를 지우고 this.를 넣는다 -->
+    <!-- 중복된 것을 지우기 위해서 변수를 세우고 교체한다 -->
+
+
+    <input type = "button" value = "night" onclick="
+        NightDayHandler(this);
+     ">
+
+    <div> <br>javascript study</div>
+        <ol>
+            - 자바스크립트는 사용자와 상호작용을 하기 위해서 필요한 언어이다.<br>
+            - html은 한 번 만들면 바꿀 수 없기 때문에 javascript가 필요하다.<br>
+            - 프로그램 : 시간의 순서에 따라서 행해지는 것이다. html은 묘사하는 언어기 때문에 시간의 순서와 관계가 없기에 프로그래밍 언어가 아니다
+        </ol>
+
+    <script>
+        var cowokers = ["dabin", "egoing", "taehon","lee"]; //원소
+        var i = 0;
+        while (i<cowokers.length) {
+            document.write('<li>' + cowokers[i] + '</li>')
+            i = i+1;
+        }
+
+        // document.write('<a href = "링크'+coworkers[i]+'">') 하면 닉네임을 가진 링크를 만들 수 있음
+    </script>
+</body>
+</html>
